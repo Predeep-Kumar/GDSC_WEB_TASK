@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <header class="brand">GDSC DISCUSSION FORUM
+            </header>
+            <div class="search-box">
+                <div class="create-post">
+                    <h2>Create a Post</h2>
+                    <input type="text" id="post-title" placeholder="Post Title">
+                    <textarea id="post-content" placeholder="Post Content"></textarea>
+                    <button onclick="createPost()">Submit</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container" method="get" action="post.html">
+
+        <div class="container" id="post-container">
+            <div class="subforum">
+                <div class="subforum-title">
+                    <h1>General Information</h1>
+                </div>
+
+
+                <div class="subforum-row">
+                    <a href="javascript:void(0);" onclick="handlePostClick('Post Title', 'Post Content')">
+                        <div class="subforum-icon subforum-column center">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="subforum-description subforum-column">
+                            <div id="post-title">  <h4 ><a href="posts.html">Description Title</a></h4></div>
+                            <div id="post-content"> <p>Description Content: let's try to be cool, otherwise,w at 'sthe point
+                                in libing together
+                                with people youdont' live.</p></div>
+                            </div>
+                        </div>
+                    </a>        
+                </div>
+            </div>
+        </div>
+       
+
+
+
+        
+
+        <footer>
+            <span>&copy; ______________________________________</span>
+        </footer>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
